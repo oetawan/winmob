@@ -67,7 +67,7 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginController.cs" />
-    <Compile Include="LoginKeys.cs" />
+    <Compile Include="LoginEvents.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="ProductType.cs" />
     <Compile Include="Program.cs" />
@@ -88,6 +88,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SearchController.cs" />
+    <Compile Include="SearchEvents.cs" />
     <Compile Include="SearchForm.cs">
       <SubType>Form</SubType>
     </Compile>

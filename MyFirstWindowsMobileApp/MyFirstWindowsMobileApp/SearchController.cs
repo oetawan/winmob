@@ -8,24 +8,29 @@ namespace MyFirstWindowsMobileApp
 {
     public class SearchController : Controller<Products>
     {
+        [PublishEvent("OnProductsUpdated")]
+        public event EventHandler ProductUpdated;
+        
         public SearchController(IView<Products> view)
             : base(view)
         {
             Products products = new Products();
             products.PopulateList();
             this.view.ViewData.Model = products;
-            this.view.UpdateView("Products");
+            NotifyView();
         }
 
-        protected override void OnViewStateChanged(string key)
+        private void OnSearch(Object sender, DataEventArgs<string> e)
         {
-            switch (key)
+            this.view.ViewData.Model.FilterData(e.Value);
+            NotifyView();
+        }
+
+        private void NotifyView()
+        {
+            if (this.ProductUpdated != null)
             {
-                case "Search":
-                    string filter = this.view.ViewData["Filter"].ToString();
-                    this.view.ViewData.Model.FilterData(filter);
-                    this.view.UpdateView("Products");
-                    break;
+                this.ProductUpdated(this, EventArgs.Empty);
             }
         }
     }

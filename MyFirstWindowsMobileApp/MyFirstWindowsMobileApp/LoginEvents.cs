@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MyFirstWindowsMobileApp
 {
-    public class LoginKeys
+    public class LoginEvents
     {
         public const string LOGIN = "Login";
         public const string EXIT = "Exit";

@@ -17,7 +17,7 @@ namespace MyFirstWindowsMobileApp
 
         protected override void OnViewStateChanged(string key)
         {
-            if (key == LoginKeys.LOGIN)
+            if (key == LoginEvents.LOGIN)
             {
                 if (view.ViewData["UserId"].ToString() == "Alex" &&
                    view.ViewData["Password"].ToString() == "password")
@@ -30,7 +30,7 @@ namespace MyFirstWindowsMobileApp
                 }
                 this.view.UpdateView("Status");
             }
-            else if (key == LoginKeys.EXIT)
+            else if (key == LoginEvents.EXIT)
             {
                 Application.Exit();
             }

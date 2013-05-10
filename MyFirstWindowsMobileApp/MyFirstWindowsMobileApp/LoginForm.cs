@@ -19,7 +19,7 @@ namespace MyFirstWindowsMobileApp
 
         protected override void OnUpdateView(string key)
         {
-            if (key == LoginKeys.STATUS)
+            if (key == LoginEvents.STATUS)
             {
                 this.lblStatus.Text = this.ViewData["Status"].ToString();
             }
@@ -29,12 +29,12 @@ namespace MyFirstWindowsMobileApp
         {
             this.ViewData["UserId"] = txtUser.Text;
             this.ViewData["Password"] = txtPassword.Text;
-            this.OnViewStateChanged(LoginKeys.LOGIN);
+            this.OnViewStateChanged(LoginEvents.LOGIN);
         }
 
         private void menuExit_Click(object sender, EventArgs e)
         {
-            this.OnViewStateChanged(LoginKeys.EXIT);
+            this.OnViewStateChanged(LoginEvents.EXIT);
         }
     }
 }

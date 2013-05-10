@@ -8,3 +8,13 @@ D:\Projects\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWin
 D:\Projects\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.exe
 D:\Projects\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.pdb
 D:\Projects\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.SearchForm.resources
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\bin\Debug\MyFirstWindowsMobileApp.exe
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\bin\Debug\MyFirstWindowsMobileApp.pdb
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\bin\Debug\System.Mobile.Mvc.dll
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.LoginForm.resources
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.Properties.Resources.resources
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.SearchForm.resources
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.csproj.GenerateResource.Cache
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.exe
+D:\Projects\winmob\MyFirstWindowsMobileApp\MyFirstWindowsMobileApp\obj\Debug\MyFirstWindowsMobileApp.pdb

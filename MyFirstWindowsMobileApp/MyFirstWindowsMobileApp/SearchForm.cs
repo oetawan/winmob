@@ -12,6 +12,9 @@ namespace MyFirstWindowsMobileApp
 {
     public partial class SearchForm : ViewForm, IView<Products>
     {
+        [PublishEvent("OnSearch")]
+        public event EventHandler<DataEventArgs<string>> OnSearchEvent;
+
         public SearchForm()
         {
             InitializeComponent();
@@ -19,22 +22,18 @@ namespace MyFirstWindowsMobileApp
 
         public new ViewDataDictionary<Products> ViewData { get; set; }
 
-        protected override void OnUpdateView(string key)
+        private void OnProductsUpdated(Object sender, EventArgs e)
         {
-            if (key == "Category")
-            {
-                this.lblProductType.Text = this.ViewData.Model.ProductType;
-            }
-            if (key == "Products")
-            {
-                this.lstProducts.DataSource = this.ViewData.Model.ProductList;
-            }
+            this.lblProductType.Text = this.ViewData.Model.ProductType;
+            this.lstProducts.DataSource = this.ViewData.Model.ProductList;
         }
 
         private void cmdSearch_Click(object sender, EventArgs e)
         {
-            this.ViewData["Filter"] = txtSearch.Text;
-            this.OnViewStateChanged("Search");
+            if (OnSearchEvent != null)
+            {
+                OnSearchEvent(this, new DataEventArgs<string>(txtSearch.Text));
+            }
         }
 
         #region IView<Products> Members
